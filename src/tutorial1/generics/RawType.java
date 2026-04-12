@@ -12,8 +12,8 @@ import java.util.ArrayList;
 public class RawType {
     /*
     raw type:when u use generics,but u dont clarify the type.
-    unsafe:because u can use any type,that may cause error when run-time
-    because there is no genirics before java1.5 when the raw type is allowed
+    unsafe:because compiler can't detect the syntax error,that may cause error when run-time
+    because there is no genirics before java1.5 when the raw type is allowed,in other words for backwards compatibility
     */
     //raw type example
     public static void main (String[]args){

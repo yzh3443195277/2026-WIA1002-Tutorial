@@ -9,16 +9,18 @@ package tutorial1.generics;
  * @author yzh34
  */
 public class Container <T>{
-    T item;
+    private T item;
     Container(){};
-    public void accept(T t){
-        this.item=t;
+    public void accept(T item){
+        this.item=item;//this  often be used when the member variable is the same name as temp variable
     }
     public T retrieve(){
         return item;
 }
 
 public static void main(String[]args){
+    //generics class can create any type of objects(integer/String...)
+    //if we not use generics class, we need to do all codes above twice
     Container <Integer> nums=new Container<>();
     Container <String> words=new Container<>();
     
